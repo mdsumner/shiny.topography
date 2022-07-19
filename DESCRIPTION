@@ -18,3 +18,5 @@ Imports:
 Remotes: 
     mdsumner/whatarelief,
     hypertidy/ximage
+URL: https://github.com/mdsumner/shiny.topography
+BugReports: https://github.com/mdsumner/shiny.topography/issues
