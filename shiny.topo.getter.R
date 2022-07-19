@@ -13,10 +13,11 @@ topo_getter <- function(extent = c(-180, 180, -90, 90), dimension = c(1280, 640)
   runApp(shinyApp(
 
     ui=fluidPage(
-      title="Zenith",
-      #plotOutput(outputId = "light_image",width="100%",click="lgt_click"),
+      title="Topography",
+      checkboxInput("native_resolution", "Native resolution", FALSE),
       plotOutput(outputId = "topo_image",width="100%",click="image_click",dblclick="image_dblclick",
                  hover=hoverOpts(id="image_hover",delay=80),brush=brushOpts(id="image_brush",delay=400,resetOnNew=TRUE)),
+
       tags$script('
   pressedKeyCount = 0;
   $(document).on("keydown", function (e) {
